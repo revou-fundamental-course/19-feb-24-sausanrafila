@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Company Profile</title>
+</head>
+<body>
+    <header>
+        <img src="asset/revoU.png" class="logo" >
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html"> Home</a> </li>
+                <li><a href="bankin.html">Our profile</a></li>
+                <li><a href="#tatakelola">Tata Kelola</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="welcome">
+        <div class="welcome1">
+            <h1>Ada karenamu</h1>
+            <p>Lahir digital, bank yang selalu ada tanpa jarak. <br>semudah itu, senyaman itu. kami hadir buat kamu. kami ya kamu</p>
+            <button class="button-welcome"><a href="bankin.html">kenalan yuk</a></button>
+        </div>
+        <div class="welcome2">
+            <img class="imgAsset" src="asset/ilustrasi.png" alt="">
+        </div>
+    </div>
+
+    <div class="sal-digital">
+        <img src="asset/sal.png" alt="" class="img-sal">
+        <h3 class="h3-sal">Sal by Bank-in Digital</h3>
+        <p class="p-sal">Apliksi mobile bank digital yang bisa ini itu,<br> dan menyatu dengan hidupmu</p>
+        <button class="button-sal">Selengkapnya</button>
+    </div>
+
+    <div id="tatakelola" class="tata-kelola">
+        <div class="img-tata-kelola">
+        <img  src="asset/buku.png" alt="">
+        </div>
+        <div>
+            <h1>Tata Kelola <br>Perusahaan </h1>
+            <p>Bagi Bank-in Digital, transparansi usaha, kualitas <br>pelayanan, dan kepercayaan nasabah adalah <br>kunci atas keberlangsungan perusahaan kami.</p>
+        </div>
+    </div>
+
+    <div id="message" class="messageUs">
+        <div class="container-form">
+        <p> <b> Drop me Your Message!! </b></p>
+            <form  id="messageForm" onsubmit="handleSubmit(event)">
+                <h5>Nama : <input type="text" id="nama" required></h5>
+                <h5>Tanggal Lahir : <input type="date" id="tanggal_lahir" required></h5>
+                <h5>Jenis kelamin :
+                    <input type="radio" name="jenis_kelamin" id="laki-laki" value="laki-laki">
+                    <label for="laki-laki">Laki - laki</label>
+                    <input type="radio" name="jenis_kelamin" id="perempuan" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </h5>
+                <h5>Pesan :<textarea id="pesan" name="pesan" cols="30" rows="3" required></textarea></h5>
+                <button  type="submit" class="submit">Submit</button>
+            </form>
+            
+        </div>
+        <div class="container-kartu-nama">
+            <div class="kartu-nama">
+                <textarea id="hasil" class="kartu-nama" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; created by sausan❤️</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
